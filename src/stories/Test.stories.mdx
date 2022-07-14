@@ -1,0 +1,132 @@
+import { Meta } from "@storybook/addon-docs";
+import Code from "./assets/code-brackets.svg";
+import Colors from "./assets/colors.svg";
+import Comments from "./assets/comments.svg";
+import Direction from "./assets/direction.svg";
+import Flow from "./assets/flow.svg";
+import Plugin from "./assets/plugin.svg";
+import Repo from "./assets/repo.svg";
+import StackAlt from "./assets/stackalt.svg";
+
+<Meta title="IDS/Pixcel" />
+
+<style>
+  {`
+  .explain{
+    font-family: 'KoPubWorldDotum';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: #1E212E;
+  }
+    .background{
+        background:#F5F5F5;
+        height : 308px;
+        display:flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        box-sizing: border-box;
+        padding:72px;
+    }
+    
+    .list{
+        width:100%;
+        display:flex;
+        justify-content:space-between;
+    }
+    .container{
+        min-width:170px;
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+    .box{
+     border: 1px dashed #0066FF;
+     border-radius: 0px;
+    }
+    .text{
+        font-weight: 700;
+        font-size: 14px;
+    }
+    .b4{
+        width: 4px;
+        height: 4px;
+    }
+    .b10{
+        width: 10px;
+        height: 10px;
+    }
+    .b20{
+        width: 20px;
+        height: 20px;
+    }
+    .b24{
+        width: 24px;
+        height: 24px;
+    }
+    .b32{
+        width: 32px;
+        height: 32px;
+    }
+    .b40{
+        width: 40px;
+        height: 40px;
+    }
+    .b48{
+        width: 48px;
+        height: 48px;
+    }
+    .b72{
+        width: 72px;
+        height: 72px;
+    }
+
+  `}
+</style>
+
+# 여백
+
+<p className="explain">
+  여백을 적용할 때는 반드시 짝수, 그리고 4 혹은 10의 배수값으로 적용해야 합니다. 다음의 여백값을 기본으로 하나, 예외가 필요한 경우 다른 값을 사용할 수
+  있습니다. 이 경우에도 4 혹은 10의 배수를 유지해 주십시오.
+</p>
+
+<div className="background">
+  <div className="list">
+    <div className="container">
+      <div className="box b4" />
+      <p className="text">4px. Micro</p>
+    </div>
+    <div className="container">
+      <div className="box b10" />
+      <p className="text">10px. Small</p>
+    </div>
+    <div className="container">
+      <div className="box b20" />
+      <p className="text">20px. Middle</p>
+    </div>
+    <div className="container">
+      <div className="box b24" />
+      <p className="text">24px. Basic</p>
+    </div>
+  </div>
+  <div className="list">
+    <div className="container">
+      <div className="box b32" />
+      <p className="text">32px. Basic+</p>
+    </div>
+    <div className="container">
+      <div className="box b40" />
+      <p className="text">40px. Large </p>
+    </div>
+    <div className="container">
+      <div className="box b48" />
+      <p className="text">48px. Large+</p>
+    </div>
+    <div className="container">
+      <div className="box b72" />
+      <p className="text">72px. X-Large</p>
+    </div>
+  </div>
+</div>
